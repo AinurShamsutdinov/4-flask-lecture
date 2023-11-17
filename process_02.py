@@ -11,11 +11,11 @@ def worker(num):
 if __name__ == '__main__':
     processes = []
     for i in range(5):
-        p = multiprocessing.Process(target=worker, args=(i, ))
+        p = multiprocessing.Process(target=worker, args=(i,))
         processes.append(p)
-        p.start()
 
     for p in processes:
+        p.start()
         p.join()
 
-    print('Finished all the processes')
+    print('Finished all processes')
