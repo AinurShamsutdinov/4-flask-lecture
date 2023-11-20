@@ -5,7 +5,7 @@ counter = 0
 
 def increment():
     global counter
-    for _ in range(10_000):
+    for _ in range(10_000_000):
         counter += 1
     print(f'Value of counter: {counter:_}')
 
